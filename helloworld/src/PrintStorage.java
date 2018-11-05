@@ -5,6 +5,6 @@ public class PrintStorage {
     }
 
     private static int storage(String s) {
-        return s.length()*2;
+        return s.length() * 2;
     }
 }
