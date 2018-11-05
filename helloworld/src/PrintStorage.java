@@ -1,6 +1,7 @@
 public class PrintStorage {
     public static void main(String[] args) {
-        System.out.println(storage("abced"));
+        String s = "avcd";
+        System.out.println(storage(s));
     }
 
     private static int storage(String s) {
