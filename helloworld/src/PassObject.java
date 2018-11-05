@@ -3,8 +3,8 @@ class Letter {
 }
 
 public class PassObject {
-    static void f(Letter y) {
-        y.c = 'z';
+    private static void f(Letter x) {
+        x.c = 'z';
     }
 
     public static void main(String[] args) {
