@@ -2,13 +2,13 @@ import java.util.Arrays;
 
 public class SearchVampireNumber {
     public static void main(String[] args) {
-        String[] targetNum = null;
-        String[] gunNum = null;  // 目标数字和对比数字
+        String[] targetNum;
+        String[] gunNum;  // 目标数字和对比数字
 
         int sum = 0;  // 吸血鬼数字的总个数
         int count = 0;  // 有效判断次数
         for (int i = 10; i < 100; i++) {
-            for (int j = i + 1; j < 100; j++) {
+            for (int j = i; j < 100; j++) {
                 int i_target = i * j;
                 if (i_target < 1000 || i_target > 9999)
                     continue;
