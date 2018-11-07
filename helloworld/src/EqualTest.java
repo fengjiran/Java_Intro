@@ -1,5 +1,5 @@
 public class EqualTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Dog spot = new Dog();
         Dog scruffy = new Dog();
 
