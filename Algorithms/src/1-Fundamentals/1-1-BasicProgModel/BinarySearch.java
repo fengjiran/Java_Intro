@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import edu.princeton.cs.algs4.*;
 
 public class BinarySearch {
     // 假设数组是非递减序列
@@ -124,6 +125,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
+
         int[] a = {2, 3, 3, 3, 3, 4, 5};
         int loc1 = rank(1, a);
         int loc2 = rankFirst(3, a);
