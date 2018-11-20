@@ -4,7 +4,7 @@ public class BinarySearch {
     // 假设数组是非递减序列
     // 一般情况下的二分查找，经典的二分查找
     // 没有考虑数组中具有多个重复的key的情况
-    public static int rank(int key, final int[] a) {
+    private static int rank(int key, final int[] a) {
         // 判断数组是否为空
         if (a == null || a.length == 0)
             return -1;
@@ -26,7 +26,7 @@ public class BinarySearch {
 
     // 假设数组是非递减序列
     // 寻找重复key中第一个出现的位置
-    public static int rankFirst(int key, final int[] a) {
+    private static int rankFirst(int key, final int[] a) {
         // 判断数组是否为空
         if (a == null || a.length == 0)
             return -1;
@@ -53,7 +53,7 @@ public class BinarySearch {
 
     // 假设数组是非递减序列
     // 寻找重复key中最后一个出现的位置
-    public static int rankLast(int key, final int[] a) {
+    private static int rankLast(int key, final int[] a) {
         // 判断数组是否为空
         if (a == null || a.length == 0)
             return -1;
@@ -77,7 +77,7 @@ public class BinarySearch {
         return -1;
     }
 
-    public static int rankFirstII(int key, final int[] a) {
+    private static int rankFirstII(int key, final int[] a) {
         if (a == null || a.length == 0)
             return -1;
 
