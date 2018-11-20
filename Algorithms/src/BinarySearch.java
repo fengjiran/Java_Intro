@@ -43,6 +43,28 @@ public class BinarySearch {
         return -1;
     }
 
+    // 假设数组是递增序列
+    // 寻找重复key中最后一个出现的位置
+    public static int rankLast(int key, int[] a) {
+        int l = 0;
+        int h = a.length - 1;
+        int m;
+        while (l <= h) {
+            m = l + (h - l) / 2;
+            if (key < a[m])
+                h = m - 1;
+            else if (key > a[m])
+                l = m + 1;
+            else {
+                while (m <= a.length-1 && key == a[m])
+                    m++;
+                m--;
+                return m;
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
 
     }
