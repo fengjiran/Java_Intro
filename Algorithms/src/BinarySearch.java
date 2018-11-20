@@ -21,7 +21,11 @@ public class BinarySearch {
 
     //寻找重复key中第一个出现的位置
     public static int rankFirst(int key, int[] a) {
-        //
+        int l = 0;
+        int h = a.length - 1;
+        int m;
+
+        return -1;
     }
 
     public static void main(String[] args) {
