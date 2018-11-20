@@ -123,9 +123,9 @@ public class BinarySearch {
         int[] a = {2, 3, 3, 3, 3, 4, 5};
         int loc1 = rank(3, a);
         int loc2 = rankFirst(3, a);
-        int loc3 = rankLast(3, a);
-        int loc4 = rankFirstII(3, a);
-        int loc5 = rankLastII(3, a);
+        int loc3 = rankLast(6, a);
+        int loc4 = rankFirstII(1, a);
+        int loc5 = rankLastII(1, a);
         System.out.println(loc1);
         System.out.println(loc2);
         System.out.println(loc3);
