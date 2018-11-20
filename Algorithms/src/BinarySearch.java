@@ -4,7 +4,7 @@ public class BinarySearch {
     // 假设数组是递增序列
     // 一般情况下的二分查找，经典的二分查找
     // 没有考虑数组中具有多个重复的key的情况
-    public static int rank(int key, int[] a) {
+    public static int rank(int key, final int[] a) {
         int lo = 0;
         int hi = a.length - 1;
         int mid;
@@ -22,7 +22,7 @@ public class BinarySearch {
 
     // 假设数组是递增序列
     // 寻找重复key中第一个出现的位置
-    public static int rankFirst(int key, int[] a) {
+    public static int rankFirst(int key, final int[] a) {
         int l = 0;
         int h = a.length - 1;
         int m;
@@ -45,7 +45,7 @@ public class BinarySearch {
 
     // 假设数组是递增序列
     // 寻找重复key中最后一个出现的位置
-    public static int rankLast(int key, int[] a) {
+    public static int rankLast(int key, final int[] a) {
         int l = 0;
         int h = a.length - 1;
         int m;
