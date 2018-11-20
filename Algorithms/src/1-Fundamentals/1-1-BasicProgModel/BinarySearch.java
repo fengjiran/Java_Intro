@@ -91,8 +91,10 @@ public class BinarySearch {
             else
                 l = m + 1;
 
-            if (l == h)
+            if (l == h && key == a[m])
                 return l;
+            if (l == h && key != a[m])
+                return -1;
         }
 
         return -1;
@@ -106,14 +108,16 @@ public class BinarySearch {
         int h = a.length - 1;
         int m;
         while (l <= h) {
-            m = l + (h - l) / 2;
+            m = l + (h - l + 1) / 2;
             if (key >= a[m])
                 l = m;
             else
                 h = m - 1;
 
-            if (l == h)
+            if (l == h && key == a[m])
                 return h;
+            if (l == h && key != a[m])
+                return -1;
         }
 
         return -1;
@@ -121,11 +125,11 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int[] a = {2, 3, 3, 3, 3, 4, 5};
-        int loc1 = rank(3, a);
+        int loc1 = rank(1, a);
         int loc2 = rankFirst(3, a);
         int loc3 = rankLast(6, a);
-        int loc4 = rankFirstII(1, a);
-        int loc5 = rankLastII(1, a);
+        int loc4 = rankFirstII(6, a);
+        int loc5 = rankLastII(6, a);
         System.out.println(loc1);
         System.out.println(loc2);
         System.out.println(loc3);
