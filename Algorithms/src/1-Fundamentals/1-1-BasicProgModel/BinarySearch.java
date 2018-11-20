@@ -85,13 +85,14 @@ public class BinarySearch {
         int h = a.length - 1;
         int m;
         while (l <= h) {
-            if (l == h)
-                return l;
             m = l + (h - l) / 2;
-            if (key <= a[m])
+            if (key <= a[m])  // 即使key==a[m],也要移动边界
                 h = m;
             else
                 l = m + 1;
+
+            if (l == h)
+                return l;
         }
 
         return -1;
