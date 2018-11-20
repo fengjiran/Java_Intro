@@ -27,7 +27,7 @@ public class BinarySearch {
         int h = a.length - 1;
         int m;
         while (l <= h) {
-            m = l + (h - l)/2;
+            m = l + (h - l) / 2;
             if (key < a[m])
                 h = m - 1;
             else if (key > a[m])
@@ -56,7 +56,7 @@ public class BinarySearch {
             else if (key > a[m])
                 l = m + 1;
             else {
-                while (m <= a.length-1 && key == a[m])
+                while (m <= a.length - 1 && key == a[m])
                     m++;
                 m--;
                 return m;
@@ -66,6 +66,13 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
+        int[] a = {1, 2, 3, 3, 3, 3, 5};
+        int loc1 = rank(3, a);
+        int loc2 = rankFirst(3, a);
+        int loc3 = rankLast(3, a);
+        System.out.println(loc1);
+        System.out.println(loc2);
+        System.out.println(loc3);
 
     }
 }
