@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BinarySearch {
     public static int rank(int key, int[] a) {
         int lo = 0;
@@ -12,5 +14,9 @@ public class BinarySearch {
                 return mid;
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
