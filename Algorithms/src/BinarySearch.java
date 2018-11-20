@@ -66,7 +66,7 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] a = {1, 2, 3, 3, 3, 3, 5};
+        int[] a = {3, 3, 3, 3, 3, 4, 5};
         int loc1 = rank(3, a);
         int loc2 = rankFirst(3, a);
         int loc3 = rankLast(3, a);
